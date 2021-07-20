@@ -7,3 +7,12 @@ eval $(minikube docker-env)
 docker build -t fastapi-mongo:1.0
 ```
 
+Applying k8 configs, secrets. deploy-service
+```bash
+kubectl apply -f <NAME.yaml>
+```
+
+Reaching the service URL
+```bash
+minikube service <SERVICE>
+```
